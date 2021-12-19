@@ -8,7 +8,7 @@ module.exports = {
       // => @media (min-width: 640px) { ... }
       'md': '768px',
       // => @media (min-width: 768px) { ... }
-      'lg': '1024px',
+      'lg': '1025px',
       // => @media (min-width: 1024px) { ... }
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
@@ -16,13 +16,23 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
+        '192': '48rem',
+        '224': '56rem',
+        '256': '64rem',
+        '288': '72rem',
+        '320': '80rem',
+        '343': '85rem',
+        '360': '90.5rem',
+        '384': '96rem',
+        '512': '128rem',
+      },
       colors: {
-        pink2: {
-          50: '#F7CAC9',
-          100: '#DAACAB',
-          200: '#A77782', 
-          300: '#5C4452', 
-          400: '#30202D',
+        gray2: {
+          50: '#2c3e50',
         },
         'pink': {
           50: '#F7CAC9',
@@ -30,9 +40,6 @@ module.exports = {
           200: '#A77782', 
           300: '#5C4452', 
           400: '#30202D',
-        },
-        gray2: {
-          50: '#2c3e50',
         },
         'custom-gray': {
           50: '#fdf1ec',

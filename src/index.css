@@ -27,17 +27,11 @@ code {
   }
 }
 
-@media (min-width: 768px) {
-  .frame2 {
-    /* height: 74vh; */
-    height: 37rem;
-  }
-}
-
+/* This is for larger 4k monitors */
 @media (min-width: 1200px) {
   .frame2 {
-    /* height: 74vh; */
-    height: 41rem;
+    height: 7vh;
+
   }
 }
 
