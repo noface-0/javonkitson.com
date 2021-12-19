@@ -21,7 +21,7 @@ Test-Webpage:
   script:
     - cd ./src
     - yarn install --frozen-lockfile
-    - yarn test
+    - yarn test --silent
   needs:
     - job: Lint-Webpage
       optional: false

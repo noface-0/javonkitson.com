@@ -1,7 +1,7 @@
 import React from "react";
 export const ThemeContext = React.createContext();
 
-// eslint-disable-next-line import/no-anonymous-default-export
+// eslint-disable
 export default ({ children }) => {
     const [theme, setTheme] = React.useState("pink");
 

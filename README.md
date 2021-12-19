@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+# javonkitson.com
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+It was also made using [Tailwind CSS](https://tailwindui.com/), [Jest](https://jestjs.io/), [Eslint](https://eslint.org/), and have [Gitlab CI](https://docs.gitlab.com/ee/ci/) setup to test and lint my code.
+
+## Development Scripts
 
 In the project directory, you can run:
 
@@ -16,8 +18,7 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `yarn build`
 
@@ -27,7 +28,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `yarn lint`
+
+Runs the ESLint configureation at the root directory.\
+Eslint is a static code analysis tool for identifying problematic patterns found in JavaScript code.
 
 ### `yarn eject`
 
@@ -39,32 +43,25 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Mobile
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Mobile](screenshots/mobile.png)
 
-### Code Splitting
+### Tablet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Tablet](screenshots/tablet.png)
 
-### Analyzing the Bundle Size
+### Desktop
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Desktop](screenshots/desktop.png)
 
-### Making a Progressive Web App
+### Desktop Large (4k)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Mobile](screenshots/desktop-large.png)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project status
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I've been continuously working on this website as I notice style errors or as I add more projects to my protfolio. 
