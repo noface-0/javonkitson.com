@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserView, MobileView} from "react-device-detect";
 import { ThemeContext } from "../components/theme";
+// import "./index.css";
 
 const Index = () => {
     const { theme, setTheme } = React.useContext(ThemeContext);
@@ -8,6 +9,7 @@ const Index = () => {
     const changeTheme = (event) => {
         setTheme(event.target.value);
     };
+
 
     return (
         <body className={`bg-${theme}-50 h-full md:h-screen`} >

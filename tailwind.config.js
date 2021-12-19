@@ -1,5 +1,15 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: {
+    enabled: false, // this prevents tailwind from removing custom css components that are processed by the user
+    content: [
+      './src/**/*.html',
+      "./src/pages/**/*.js", 
+      "./src/components/theme.js",
+    ],
+    options: {
+      safelist: ["dark","pink"],
+    },
+  },
   //darkMode: false, // or 'media' or 'class'
   darkMode: 'class',
   theme: {
@@ -99,5 +109,6 @@ module.exports = {
       borderColor: ['active'],
     }
   },
+  enabled: process.env.NODE_ENV === "development",
   plugins: [],
 }
