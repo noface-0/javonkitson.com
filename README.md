@@ -1,8 +1,26 @@
 # javonkitson.com
 
+This project showcases not only my web development skills but also my proficiency in DevOps. The site is automatically tested, linted, and deployed through a CI/CD pipeline, ensuring code quality and seamless updates.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It was also made using [Tailwind CSS](https://tailwindui.com/), [Jest](https://jestjs.io/), [Eslint](https://eslint.org/), and have [Gitlab CI](https://docs.gitlab.com/ee/ci/) setup to test and lint my code.
+## Technologies Used
+
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Tailwind CSS](https://tailwindui.com/)
+- [Jest](https://jestjs.io/)
+- [Eslint](https://eslint.org/)
+- [Gitlab CI](https://docs.gitlab.com/ee/ci/) 
+
+## CI/CD Pipeline
+
+The project is configured with a GitLab CI/CD pipeline that automates the process of testing, linting, and deploying. When changes are pushed to the Git repository:
+
+1. **Testing**: Jest is used to run all unit tests.
+2. **Linting**: ESLint checks the code for any syntactical or stylistic errors.
+3. **Deployment**: If all tests pass and the linter is satisfied, the code is then deployed to the live site.
+
+This setup ensures that the website is consistently stable, efficient, and up-to-date with the latest changes.
 
 ## Development Scripts
 
@@ -43,6 +61,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
 ## Screenshots
 
 ### Mobile
@@ -61,7 +80,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ![Mobile](screenshots/desktop-large.png)
 
+## Project Status
 
-## Project status
+I've been continuously working on this website as I notice style errors or as I add more projects to my portfolio. The automated CI/CD pipeline ensures that these updates are immediately reflected on the live site without manual intervention.
 
-I've been continuously working on this website as I notice style errors or as I add more projects to my protfolio. 
+---
+
+This way, visitors to your GitHub/GitLab repository not only see the technologies you're using but also understand how you're leveraging DevOps practices.
