@@ -10,12 +10,12 @@ phases:
 
   pre_build:
     commands:
-      - echo Running linting...
+      - echo Linting...
       - yarn lint
 
   build:
     commands:
-      - echo Building the React app...
+      - echo Building the Website app...
       - yarn build
 
   post_build:
