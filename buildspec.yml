@@ -21,6 +21,9 @@ phases:
     commands:
      - echo Pushing the Docker image...
      - docker push 914326228175.dkr.ecr.us-east-2.amazonaws.com/website:latest 
+     - cp start_server.sh build
+     - cp install_dependencies.sh build
+     - cp appspec.yml build
      - echo Build completed on `date`
 
 artifacts:
