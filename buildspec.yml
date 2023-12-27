@@ -11,15 +11,17 @@ phases:
 
   build:
     commands:
+      - echo Build started on `date`
       - yarn build
       - docker build -t website .
       - docker tag website:latest 914326228175.dkr.ecr.us-east-2.amazonaws.com/website:latest
       - docker push 914326228175.dkr.ecr.us-east-2.amazonaws.com/website:latest
-      - echo Build completed on `date`
 
   post_build:
     commands:
-      - echo Build completed on `date`
+     - echo Pushing the Docker image...
+     - docker push 914326228175.dkr.ecr.us-east-2.amazonaws.com/website:latest 
+     - echo Build completed on `date`
 
 artifacts:
   files:
