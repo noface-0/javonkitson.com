@@ -2,13 +2,12 @@ default:
   image: docker:19.03.12
 
 stages:
-  - Lint
   - Test
 
 # Lint the webpage
 Lint-Webpage:
   image: node:14.18.1
-  stage: Lint
+  stage: Test
   script:
     - cd ./src
     - yarn install --frozen-lockfile
