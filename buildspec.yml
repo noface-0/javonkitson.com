@@ -6,6 +6,7 @@ phases:
       nodejs: 12
     commands:
       - echo Installing source NPM dependencies...
+      - yarn global add serve
       - yarn install --frozen-lockfile
 
   pre_build:
@@ -20,6 +21,7 @@ phases:
 
   post_build:
     commands:
+      - cp package.json build/
       - echo Build completed on `date`
 
 artifacts:
