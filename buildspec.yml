@@ -15,7 +15,7 @@ phases:
 
   post_build:
     commands:
-      - cp package.json build/
+      - cp package.json build
       - echo Build completed on `date`
 
 artifacts:
