@@ -1,1 +1,2 @@
-yarn add serve
+#!/bin/bash
+yum install -y httpd
