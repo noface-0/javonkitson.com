@@ -11,6 +11,11 @@ phases:
     commands:
       - echo Build completed on `date`
 
+  post_build:
+    commands:
+      - cp package.json build/
+      - echo Build completed on `date`
+
 artifacts:
   files:
     - '**/*'
