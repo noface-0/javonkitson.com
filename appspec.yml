@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /path/to/your/app
+    destination: /
 hooks:
   BeforeInstall:
     - location: install_dependencies.sh
@@ -11,4 +11,4 @@ hooks:
   ApplicationStart:
     - location: start_server.sh
       timeout: 300
-      runas: roo
+      runas: root
