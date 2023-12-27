@@ -7,15 +7,18 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - yarn install
+      - aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 914326228175.dkr.ecr.us-east-2.amazonaws.com
 
   build:
     commands:
       - yarn build
+      - docker build -t website .
+      - docker tag website:latest 914326228175.dkr.ecr.us-east-2.amazonaws.com/website:latest
       - echo Build completed on `date`
 
   post_build:
     commands:
-      - cp package.json build/
+      - docker push 914326228175.dkr.ecr.us-east-2.amazonaws.com/website:latest
       - echo Build completed on `date`
 
 artifacts:
