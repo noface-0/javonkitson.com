@@ -9,7 +9,6 @@ phases:
 
   build:
     commands:
-      - cp package.json build
       - echo Build completed on `date`
 
 artifacts:
