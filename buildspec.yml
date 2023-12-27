@@ -6,9 +6,11 @@ phases:
       nodejs: 12
     commands:
       - echo Installing source NPM dependencies...
+      - yarn install
 
   build:
     commands:
+      - yarn build
       - echo Build completed on `date`
 
   post_build:
