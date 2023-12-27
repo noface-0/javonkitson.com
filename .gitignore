@@ -79,4 +79,4 @@ typings/
 .dynamodb/ 
 
 # React build directory
-# build/
+build/
