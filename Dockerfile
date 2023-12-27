@@ -3,4 +3,4 @@ WORKDIR /app
 COPY build/* ./
 COPY package*.json ./
 RUN yarn install
-CMD ["yarn", "serve"]
+CMD ["yarn", "serve", "-s", "build"]
