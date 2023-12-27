@@ -23,6 +23,7 @@
     "test": "craco test",
     "lint": "yarn run eslint",
     "eject": "react-scripts eject"
+    "deploy": "serve -s -l 80"
   },
   "eslintConfig": {
     "extends": [
