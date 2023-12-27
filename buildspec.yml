@@ -15,13 +15,13 @@ phases:
 
   post_build:
     commands:
-      - cp package.json build
+      - cp package.json build/
       - echo Build completed on `date`
 
 artifacts:
   files:
     - '**/*'
-  base-directory: 'build'
+  base-directory: 'build/'
 
 cache:
   paths:
