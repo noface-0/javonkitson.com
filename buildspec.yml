@@ -1,7 +1,10 @@
+
 version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 14
     commands:
       - echo Installing source NPM dependencies...
       - yarn global add serve
