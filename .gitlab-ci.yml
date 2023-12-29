@@ -2,10 +2,12 @@ default:
   image: docker:19.03.12
 
 stages:
+  - Lint
   - Test
+  - Deploy
 
 # Lint the webpage
-Lint-Webpage:
+Lint:
   image: node:14.18.1
   stage: Test
   script:
@@ -14,7 +16,7 @@ Lint-Webpage:
     - yarn lint
 
 # Run the Test cases for the webpage 
-Test-Webpage:
+Test:
   image: node:14.18.1
   stage: Test
   script:
@@ -24,3 +26,16 @@ Test-Webpage:
   needs:
     - job: Lint-Webpage
       optional: false
+
+Deploy:
+  image: docker:latest
+  stage: Deploy
+  script:
+    - echo "test"
+  needs:
+    - job: Lint
+      optional: false
+    - job: Test
+      optional: false
+  tags:
+    - website
