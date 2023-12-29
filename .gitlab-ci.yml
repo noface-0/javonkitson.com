@@ -32,7 +32,7 @@ Test:
       optional: false
 
 Deploy:
-  image: docker:latest
+  image: docker:dind
   services:
     - docker:dind
   stage: Deploy
