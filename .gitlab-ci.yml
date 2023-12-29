@@ -31,7 +31,8 @@ Deploy:
   image: docker:latest
   stage: Deploy
   script:
-    - echo "test"
+    - docker build -t website .
+    - docker run -d -p 3000:80 --name my-app website:latest
   needs:
     - job: Test
       optional: false
