@@ -9,7 +9,7 @@ stages:
 # Lint the webpage
 Lint:
   image: node:14.18.1
-  stage: Test
+  stage: Lint
   script:
     - cd ./src
     - yarn install --frozen-lockfile
