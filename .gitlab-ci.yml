@@ -32,13 +32,12 @@ Test:
       optional: false
 
 Deploy:
-  image: docker:dind
   services:
     - docker:dind
   stage: Deploy
   script:
     - docker build -t website .
-    - docker run -d -p 80:80 --name my-app website:latest
+    - docker run -d -p 80:80 --name website website:latest
   needs:
     - job: Test
       optional: false
