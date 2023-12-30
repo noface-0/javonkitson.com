@@ -38,7 +38,7 @@ Deploy:
   variables:
     DOCKER_HOST: tcp://docker:2375/
     DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_CERTDIR: ""
   script:
     - docker build -t website .
     - docker run -d -p 80:80 --name website website:latest
