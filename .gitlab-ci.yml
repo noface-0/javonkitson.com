@@ -4,10 +4,12 @@ default:
 variables:
   DOCKER_HOST: tcp://docker:2375/
   DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
 
 stages:
   - Lint
   - Test
+  - Build
   - Deploy
 
 # Lint the webpage
@@ -31,6 +33,22 @@ Test:
     - job: Lint
       optional: false
 
+ Build:
+  stage: Build
+  services:
+   - name: docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+  script:
+    - docker build -t website .
+  needs:
+    - job: Test
+      optional: false
+  tags:
+    - website
+
 Deploy:
   stage: Deploy
   services:
@@ -40,10 +58,9 @@ Deploy:
     DOCKER_DRIVER: overlay2
     DOCKER_TLS_CERTDIR: ""
   script:
-    - docker build -t website .
     - docker run -d -p 80:80 --name website website:latest
   needs:
-    - job: Test
+    - job: Build
       optional: false
   tags:
     - website
