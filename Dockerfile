@@ -9,6 +9,8 @@ COPY . .
 
 RUN yarn build
 
-EXPOSE 80
+RUN yarn global add serve
 
-CMD ["yarn", "serve", "-s", "build", "-l", "80"]
+CMD ["serve", "-s", "build", "-l", "80"]
+
+EXPOSE 80
