@@ -42,7 +42,8 @@ Build:
     DOCKER_DRIVER: overlay2
     DOCKER_TLS_CERTDIR: ""
   script:
-    - docker build -t website .
+    - docker build -t registry.gitlab.com/p4428/javonkitson.com .
+    - docker push registry.gitlab.com/p4428/javonkitson.com
   needs:
     - job: Test
       optional: false
@@ -58,7 +59,7 @@ Deploy:
     DOCKER_DRIVER: overlay2
     DOCKER_TLS_CERTDIR: ""
   script:
-    - docker run -d -p 80:80 --name website website:latest
+    - docker run -d -p 80:80 --name website registry.gitlab.com/p4428/javonkitson.com:latest
   needs:
     - job: Build
       optional: false
