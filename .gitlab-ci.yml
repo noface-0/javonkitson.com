@@ -63,7 +63,6 @@ Deploy:
   before_script:
     - echo "$DOCKER_REGISTRY_PASS" | docker login registry.gitlab.com --username $DOCKER_REGISTRY_USER --password-stdin
   script:
-    - docker login
     - docker run -d -p 80:80 --name website registry.gitlab.com/p4428/javonkitson.com:latest
   needs:
     - job: Build
