@@ -33,7 +33,7 @@ Test:
     - job: Lint
       optional: false
 
- Build:
+Build:
   stage: Build
   services:
    - name: docker:dind
