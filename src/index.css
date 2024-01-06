@@ -1,6 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   margin: 0;
@@ -9,44 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #F7CAC9; */
-  /* height: 100vh;
-  width: 100vw; */
-  padding: 1em;
-  /* position: absolute; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-@media (min-width: 768px) {
-  .frame {
-    height: 96vh;
-  }
-}
-
-/* This is for larger 4k monitors */
-@media (min-width: 1200px) {
-  .frame2 {
-    height: 7vh;
-
-  }
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #5C4452;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #A77782;
 }

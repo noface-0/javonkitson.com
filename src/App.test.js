@@ -1,10 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Home from "./pages/index";
-import ThemeContext from "./components/theme";
+import App from './App';
 
 test('renders learn react link', () => {
-  render(<ThemeContext><Home /></ThemeContext>);
-  const linkElement = screen.getByText(/Javon Kitson/i);
-  // expect(linkElement).toBeInTheDocument();
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
