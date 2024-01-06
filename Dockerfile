@@ -11,6 +11,6 @@ RUN yarn build
 
 RUN yarn global add serve
 
-CMD ["serve", "-s", "build", "-l", "80"]
-
 EXPOSE 80
+
+CMD ["serve", "-s", "build", "-l", "80"]
