@@ -28,20 +28,18 @@ const Index = () => {
                     </MobileView>
                 </div>
                 {/* 1,2*/}
+                {/* Personal Introduction */}
                 <div className={`font-serif flex-shrink-0 col-span-1 border-single md:border-r-2 border-b-2 w-full overflow-hidden sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 border-${theme}-300 p-2`}> 
                     <blockquote className={`text-left text-${theme}-300`}>
-                        Hi, I&apos;m Javon. I&apos;m a software engineer based in the Baltimore Area. I&apos;m currently working at <a href="https://www.i-a-i.com/" className={`text-${theme}-400`}>Intelligent Automation</a> as a Software Engineer.
+                        Hi, I&apos;m Javon. I&apos;m a Research Engineer at Blue Halo in Rockville, MD, specializing in AI, machine learning, and data science. 
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        I recieved my Bachelor&apos;s from Loyola University Maryland in 2020 where I studied Computer Science and minored in Biomedical Physics.
-                        In the future I hope to become a Full Stack software developer.
-                        I have a passion for learning new things and I&apos;m always looking to improve my skills.
+                        I received my Bachelor&apos;s from Loyola University Maryland in 2020, majoring in Computer Science with a minor in Biomedical Physics. I am currently pursuing my Master's in Applied Artificial Intelligence from the University of San Diego.
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        Currently outside of work I like making esthtically pleasing websites and applications to gather, analyze, and act on stock market data.
-                        I also enjoy growing plants and mushrooms and I&apos;m a huge fan of the band Animals as Leaders.
+                        Outside of work, I'm passionate about developing aesthetically pleasing websites and applications. I also have interests in plant and mushroom cultivation, and I enjoy listening to Animals as Leaders.
                     </blockquote>
                 </div>
                 {/* 2,2*/}
@@ -150,7 +148,9 @@ const Index = () => {
                 {/* 3,1*/}
                 <div className={`text-4xl mx-auto text-${theme}-200 text-center font-serif flex-shrink-0 col-span-1 row-span-1 h-16 md:border-r-2 p-2 overflow-hidden sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 border-${theme}-300`}> 
                     {/* <button onClick={slideLeft} className={`inline float-left bg-${theme}-400 active:bg-${theme}-50 active:text-${theme}-400 text-${theme}-50 active:border-${theme}-300 border-transparent border-2 border-single rounded-full h-10 w-10`}> {"< "} </button> */}
-                    <div className={`inline m-auto p-2 text-${theme}-400`}><a className="mailto" href="mailto:javonkitson@gmail.com?subject=Resume&body=Hi Javon, Would you mind sending me a copy of your resume?"  target="_blank" rel="noopener noreferrer">Resume</a></div>
+                    <div className={`inline m-auto p-2 text-${theme}-400`}>
+                        <a className="mailto" href="mailto:javonkitson@gmail.com?subject=Resume&body=Hi Javon, Would you mind sending me a copy of your resume?"  target="_blank" rel="noopener noreferrer">Resume</a>
+                    </div>
                     {/* <button onClick={slideRight} className={`inline float-right bg-${theme}-400 active:bg-${theme}-50 active:text-${theme}-400 text-${theme}-50 active:border-${theme}-300 border-transparent border-2 border-single rounded-full h-10 w-10`}> {" >"} </button> */}
                 </div>
                 {/* 3,2*/}
