@@ -63,9 +63,13 @@ Deploy:
   before_script:
     - echo "$DOCKER_REGISTRY_PASS" | docker login registry.gitlab.com --username $DOCKER_REGISTRY_USER --password-stdin
   script:
+    - docker pull registry.gitlab.com/p4428/javonkitson.com:latest # Ensures pulling the latest image
+    - docker stop website || true # Stops the running container if exists, 'true' ensures the job doesn't fail
+    - docker rm website || true # Removes the container if exists
     - docker run -d -p 80:80 --name website registry.gitlab.com/p4428/javonkitson.com:latest
   needs:
     - job: Build
       optional: false
   tags:
     - website
+
