@@ -35,11 +35,11 @@ const Index = () => {
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        I received my Bachelor&apos;s from Loyola University Maryland in 2020, majoring in Computer Science with a minor in Biomedical Physics. I am currently pursuing my Master's in Applied Artificial Intelligence from the University of San Diego.
+                        I received my Bachelor&apos;s from Loyola University Maryland in 2020, majoring in Computer Science with a minor in Biomedical Physics. I am currently pursuing my Master&apos;s in Applied Artificial Intelligence from the University of San Diego.
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        Outside of work, I'm passionate about developing aesthetically pleasing websites and applications. I also have interests in plant and mushroom cultivation, and I enjoy listening to Animals as Leaders.
+                        Outside of work, I&apos;m passionate about developing aesthetically pleasing websites and applications. I also have interests in plant and mushroom cultivation, and I enjoy listening to Animals as Leaders.
                     </blockquote>
                 </div>
                 {/* 2,2*/}
