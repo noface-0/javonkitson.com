@@ -1,12 +1,19 @@
 default:
   image: docker:19.03.12
 
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
+
 stages:
   - Lint
   - Test
+  - Build
+  - Deploy
 
 # Lint the webpage
-Lint-Webpage:
+Lint:
   image: node:14.18.1
   stage: Lint
   script:
@@ -15,7 +22,7 @@ Lint-Webpage:
     - yarn lint
 
 # Run the Test cases for the webpage 
-Test-Webpage:
+Test:
   image: node:14.18.1
   stage: Test
   script:
@@ -23,5 +30,46 @@ Test-Webpage:
     - yarn install --frozen-lockfile
     - yarn test --silent
   needs:
-    - job: Lint-Webpage
+    - job: Lint
       optional: false
+
+Build:
+  stage: Build
+  services:
+   - name: docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+  before_script:
+    - echo "$DOCKER_REGISTRY_PASS" | docker login registry.gitlab.com --username $DOCKER_REGISTRY_USER --password-stdin
+  script:
+    - docker build -t registry.gitlab.com/p4428/javonkitson.com .
+    - docker push registry.gitlab.com/p4428/javonkitson.com
+  needs:
+    - job: Test
+      optional: false
+  tags:
+    - website
+
+Deploy:
+  stage: Deploy
+  services:
+   - name: docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+  before_script:
+    - echo "$DOCKER_REGISTRY_PASS" | docker login registry.gitlab.com --username $DOCKER_REGISTRY_USER --password-stdin
+  script:
+    - docker pull registry.gitlab.com/p4428/javonkitson.com:latest # Ensures pulling the latest image
+    - docker stop website || true # Stops the running container if exists, 'true' ensures the job doesn't fail
+    - docker rm website || true # Removes the container if exists
+    - docker run -d -p 80:80 --name website registry.gitlab.com/p4428/javonkitson.com:latest
+  needs:
+    - job: Build
+      optional: false
+  tags:
+    - website
+
