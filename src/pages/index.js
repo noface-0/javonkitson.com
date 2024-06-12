@@ -30,18 +30,18 @@ const Index = () => {
                 {/* 1,2*/}
                 <div className={`font-serif flex-shrink-0 col-span-1 border-single md:border-r-2 border-b-2 w-full overflow-hidden sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 border-${theme}-300 p-2`}> 
                     <blockquote className={`text-left text-${theme}-300`}>
-                        Hi, I&apos;m Javon. I&apos;m a software engineer based in the Baltimore Area. I&apos;m currently working at <a href="https://www.i-a-i.com/" className={`text-${theme}-400`}>Intelligent Automation</a> as a Software Engineer.
+                        Hi, I&apos;m Javon. I&apos;m a software engineer based in the Baltimore Area. I&apos;m currently working at <a href="https://www.i-a-i.com/" rel="noreferrer" target="_blank" className={`text-${theme}-400`}>Intelligent Automation</a> as a Software Engineer.
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
                         I recieved my Bachelor&apos;s from Loyola University Maryland in 2020 where I studied Computer Science and minored in Biomedical Physics.
-                        In the future I hope to become a Full Stack software developer.
+                        I'm currently working towards a graduate degree in Applied Artifical Intelligence, and in the future I hope to continue working in the software industry.
                         I have a passion for learning new things and I&apos;m always looking to improve my skills.
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
                         Currently outside of work I like making esthtically pleasing websites and applications to gather, analyze, and act on stock market data.
-                        I also enjoy growing plants and mushrooms and I&apos;m a huge fan of the band Animals as Leaders.
+                        I also enjoy growing plants and mushrooms and I&apos;m a huge fan of the band Snarky Puppy.
                     </blockquote>
                 </div>
                 {/* 2,2*/}
