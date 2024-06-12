@@ -35,14 +35,14 @@ const Index = () => {
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        I received my Bachelor's from Loyola University Maryland in 2020 where I studied Computer Science and minored in Biomedical Physics.
-                        I graduated with a master's degree in Applied Artificial Intelligence, and I currently work as a Research Engineer III at BlueHalo.
-                        I have a passion for learning new things and I'm always looking to improve my skills, particularly in the field of machine learning in the stock market.
+                        I received my Bachelor&apos;s from Loyola University Maryland in 2020 where I studied Computer Science and minored in Biomedical Physics.
+                        I graduated with a master&apos;s degree in Applied Artificial Intelligence, and I currently work as a Research Engineer III at BlueHalo.
+                        I have a passion for learning new things and I&apos;m always looking to improve my skills, particularly in the field of machine learning in the stock market.
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
                         Outside of work, I enjoy making aesthetically pleasing websites and applications to gather, analyze, and act on stock market data.
-                        I also enjoy growing plants and mushrooms, and I'm a huge fan of the band Snarky Puppy.
+                        I also enjoy growing plants and mushrooms, and I&apos;m a huge fan of the band Snarky Puppy.
                     </blockquote>
 
                 </div>
