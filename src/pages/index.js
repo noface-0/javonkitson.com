@@ -34,15 +34,16 @@ const Index = () => {
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        I recieved my Bachelor&apos;s from Loyola University Maryland in 2020 where I studied Computer Science and minored in Biomedical Physics.
-                        I'm currently working towards a graduate degree in Applied Artifical Intelligence, and in the future I hope to continue working in the software industry.
-                        I have a passion for learning new things and I&apos;m always looking to improve my skills.
+                        I received my Bachelor's from Loyola University Maryland in 2020 where I studied Computer Science and minored in Biomedical Physics.
+                        I graduated with a master's degree in Applied Artificial Intelligence, and I currently work as a Research Engineer III at BlueHalo.
+                        I have a passion for learning new things and I'm always looking to improve my skills, particularly in the field of machine learning in the stock market.
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        Currently outside of work I like making esthtically pleasing websites and applications to gather, analyze, and act on stock market data.
-                        I also enjoy growing plants and mushrooms and I&apos;m a huge fan of the band Snarky Puppy.
+                        Outside of work, I enjoy making aesthetically pleasing websites and applications to gather, analyze, and act on stock market data.
+                        I also enjoy growing plants and mushrooms, and I'm a huge fan of the band Snarky Puppy.
                     </blockquote>
+
                 </div>
                 {/* 2,2*/}
                 <div className={`2xl:h-360 lg:h-5/6 md:h-128 font-serif flex-shrink-0 m-auto border-single p-2 w-full border-b-2 sm:w-full md:w-2/3 lg:w-2/3 xl:w-2/3 border-${theme}-300`}> 
