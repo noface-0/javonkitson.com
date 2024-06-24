@@ -1,5 +1,7 @@
 default:
   image: docker:19.03.12
+  services:
+    - docker:dind
 
 variables:
   DOCKER_HOST: tcp://docker:2375/
@@ -35,12 +37,6 @@ Test:
 
 Build:
   stage: Build
-  services:
-   - name: docker:dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375/
-    DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ""
   before_script:
     - echo "$DOCKER_REGISTRY_PASS" | docker login registry.gitlab.com --username $DOCKER_REGISTRY_USER --password-stdin
   script:
@@ -54,12 +50,6 @@ Build:
 
 Deploy:
   stage: Deploy
-  services:
-   - name: docker:dind
-  variables:
-    DOCKER_HOST: tcp://docker:2375/
-    DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ""
   before_script:
     - echo "$DOCKER_REGISTRY_PASS" | docker login registry.gitlab.com --username $DOCKER_REGISTRY_USER --password-stdin
   script:
@@ -72,4 +62,3 @@ Deploy:
       optional: false
   tags:
     - website
-
