@@ -18,9 +18,6 @@ stages:
 Lint:
   image: node:14.18.1
   stage: Lint
-  cache:
-    paths:
-      - src/node_modules/
   script:
     - cd ./src
     - yarn install --frozen-lockfile
