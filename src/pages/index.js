@@ -41,7 +41,7 @@ const Index = () => {
                     </blockquote>
                     <br/>
                     <blockquote className={`text-left text-${theme}-300`}>
-                        Outside of work, I enjoy making aesthetically pleasing websites and applications to gather, analyze, and act on stock market data.
+                        Outside of work, I enjoy making websites and applications to gather, analyze, and act on stock market data.
                         I also enjoy growing plants and mushrooms, and I&apos;m a huge fan of the band Snarky Puppy.
                     </blockquote>
 
