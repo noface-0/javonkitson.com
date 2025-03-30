@@ -2,14 +2,6 @@
 
 A clean, modern portfolio website built with Next.js and Tailwind CSS.
 
-## Features
-
-- Responsive design that works on all device sizes
-- Custom pink color palette
-- Project showcase with hover effects
-- Smooth scrolling for projects section
-- Clean, minimal interface
-
 ## Tech Stack
 
 - Next.js
