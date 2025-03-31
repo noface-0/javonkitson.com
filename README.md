@@ -1,6 +1,6 @@
-# Javon Kitson Portfolio Website
+# Portfolio Website
 
-A clean, modern portfolio website built with Next.js and Tailwind CSS.
+A portfolio website built with Next.js and Tailwind CSS.
 
 ## Tech Stack
 
@@ -21,7 +21,7 @@ A clean, modern portfolio website built with Next.js and Tailwind CSS.
 This site can be easily deployed to Vercel, Netlify, or GitHub Pages.
 
 ```
-yarn build
+yarn export
 ```
 
 ## License
