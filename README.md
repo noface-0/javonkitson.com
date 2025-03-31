@@ -21,7 +21,7 @@ A portfolio website built with Next.js and Tailwind CSS.
 This site can be easily deployed to Vercel, Netlify, or GitHub Pages.
 
 ```
-yarn export
+yarn build
 ```
 
 ## License
