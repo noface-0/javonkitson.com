@@ -30,7 +30,7 @@ export default function Home() {
       title: 'Reinforcement Learning Stock Trading',
       description: 'Soft Actor Critic Algorithm for trading optimization',
       stack: ['Python', 'TensorFlow', 'Keras', 'Pandas', 'NumPy'],
-      link: 'https://github.com/noface-0/Reinforcement-Learning-Stock-Trading'
+      link: '/AAI590Capstone.pdf'
     },
     {
       title: 'Geoestimation',
