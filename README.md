@@ -1,10 +1,10 @@
 # javonkitson.com
 
-Personal portfolio website of Javon Kitson — Research Engineer specializing in AI/ML infrastructure and HPC clusters.
+Personal portfolio website of Javon Kitson — AI/ML HPC Cluster Engineer, specializing in high-performance infrastructure and distributed training systems.
 
 ## Overview
 
-This is my professional portfolio website, built with modern web technologies and featuring a terminal-inspired design aesthetic. The site showcases my experience, projects, and professional background in the AI/ML infrastructure space.
+Professional portfolio website built with Next.js and TypeScript, featuring a terminal-inspired design aesthetic. The site showcases my experience in AI/ML infrastructure, GPU cluster architecture, and research projects in generative models and deep reinforcement learning.
 
 ## Tech Stack
 
@@ -15,18 +15,17 @@ This is my professional portfolio website, built with modern web technologies an
 
 ## Features
 
-- 🎨 **Modern Design** — Terminal-inspired aesthetic with custom typography
-- 🌓 **Theme Toggle** — Seamless switching between light (Paper) and dark (Ink) modes
-- ⚡ **Performance** — Server-side rendering with Next.js for optimal load times
-- 📱 **Responsive** — Optimized for all devices from mobile to ultrawide displays
-- 🎯 **Interactive** — Live ASCII flow field animation with mouse tracking
-- ♿ **Accessible** — WCAG AA compliant with semantic HTML
+- **Terminal-Inspired Design** — Clean, monospace aesthetic with custom typography
+- **Theme Toggle** — Seamless switching between light (Paper) and dark (Ink) modes
+- **Server-Side Rendering** — Optimized performance with Next.js SSR
+- **Responsive Layout** — Optimized for all devices from mobile to ultrawide displays
+- **Interactive Animations** — Live ASCII flow field with mouse tracking
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ and npm/yarn installed
+- Node.js 18+ and npm
 - Git
 
 ### Installation
@@ -38,13 +37,9 @@ cd javonkitson.com
 
 # Install dependencies
 npm install
-# or
-yarn install
 
 # Run the development server
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
@@ -54,25 +49,21 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 ```bash
 # Create optimized production build
 npm run build
-# or
-yarn build
 
 # Start production server
 npm start
-# or
-yarn start
 ```
 
 ## Project Structure
 
 ```
 javonkitson.com/
-├── public/              # Static assets
+├── public/
 │   ├── favicon.ico
-│   ├── AAI590Capstone.pdf
-│   └── JavonKResumev4.pdf
+│   ├── JavonKResumev4.pdf
+│   └── robots.txt
 ├── src/
-│   ├── components/      # React components
+│   ├── components/
 │   │   ├── About.tsx
 │   │   ├── Contact.tsx
 │   │   ├── Experience.tsx
@@ -83,11 +74,11 @@ javonkitson.com/
 │   │   ├── Projects.tsx
 │   │   ├── ThemeContext.tsx
 │   │   └── Topbar.tsx
-│   ├── pages/          # Next.js pages
+│   ├── pages/
 │   │   ├── _app.tsx
 │   │   ├── _document.tsx
 │   │   └── index.tsx
-│   └── styles/         # Global styles
+│   └── styles/
 │       └── globals.css
 ├── next.config.js
 ├── tsconfig.json
@@ -112,52 +103,13 @@ Theme colors are defined in `src/styles/globals.css` using CSS variables:
   --bg: #f7f1ea;        /* Light background */
   --ink: #3a2e3a;       /* Text color */
   --accent: oklch(...); /* Accent color */
-  /* ... more variables */
 }
 
 [data-theme="ink"] {
   --bg: #1a141a;        /* Dark background */
   --ink: #f7f1ea;       /* Light text */
-  /* ... dark mode overrides */
 }
 ```
-
-## Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import the repository in [Vercel](https://vercel.com)
-3. Deploy
-
-### Netlify
-
-1. Push your code to GitHub
-2. Connect repository in [Netlify](https://netlify.com)
-3. Set build command: `npm run build`
-4. Set publish directory: `.next`
-5. Deploy
-
-### Static Export
-
-```bash
-# Add to next.config.js
-module.exports = {
-  output: 'export',
-}
-
-# Build
-npm run build
-
-# Deploy the 'out' directory to any static host
-```
-
-## Performance
-
-- **Lighthouse Score:** 95+ across all metrics
-- **First Contentful Paint:** < 1s
-- **Time to Interactive:** < 2s
-- **Accessibility:** WCAG AA compliant
 
 ## Browser Support
 
@@ -168,7 +120,7 @@ npm run build
 
 ## License
 
-MIT License - feel free to use this as a template for your own portfolio!
+MIT License - feel free to use this as a template for your own portfolio.
 
 ## Contact
 
@@ -177,5 +129,3 @@ MIT License - feel free to use this as a template for your own portfolio!
 - **LinkedIn:** [javonkitson](https://linkedin.com/in/javonkitson)
 
 ---
-
-Built with care in the terminal.
