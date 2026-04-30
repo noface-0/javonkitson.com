@@ -1,50 +1,23 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
+  "name": "javonkitson-portfolio-v2",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@craco/craco": "^6.4.0",
-    "@farbenmeer/react-spring-slider": "^1.5.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "postcss-loader": "^4.3.0",
-    "react": "^17.0.2",
-    "react-device-detect": "^2.1.2",
-    "react-dom": "^17.0.2",
-    "react-responsive-carousel": "^3.2.22",
-    "react-router-dom": "^6.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "lint": "yarn run eslint",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9",
-    "postcss": "^7.0.39",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    "@types/node": "^20.1.4",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.0.4"
   }
 }
