@@ -32,7 +32,7 @@ const PROJECTS: ProjectData[] = [
     desc: 'Ensemble trading system combining PPO/SAC agents, genetic algorithm portfolio selection, and FNN price prediction — achieved +89% ROI in backtests.',
     stack: ['Python', 'PyTorch', 'QuantConnect', 'Pandas'],
     year: '2024',
-    repo: 'https://github.com/noface-0/deep-rl-trading',
+    repo: '/AAI590Capstone.pdf',
   },
   {
     n: '04',
