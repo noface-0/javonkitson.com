@@ -51,7 +51,7 @@ export default function About() {
               </li>
               <li>
                 <span className="k">linkedin</span>
-                <span>javonkitson</span>
+                <span>javon-k-1b4127160</span>
               </li>
             </ul>
 
