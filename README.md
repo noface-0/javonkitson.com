@@ -4,22 +4,14 @@ Personal portfolio website of Javon Kitson — AI/ML HPC Cluster Engineer, speci
 
 ## Overview
 
-Professional portfolio website built with Next.js and TypeScript, featuring a terminal-inspired design aesthetic. The site showcases my experience in AI/ML infrastructure, GPU cluster architecture, and research projects in generative models and deep reinforcement learning.
+Portfolio website built with Next.js and TypeScript, with a terminal-inspired design aesthetic. The site showcases my experience in AI/ML infrastructure, GPU cluster architecture, and research projects in generative models and deep reinforcement learning.
 
-## Tech Stack
+## Stack
 
 - **Framework:** Next.js 14
 - **Language:** TypeScript
 - **Styling:** Custom CSS with CSS Variables
 - **Fonts:** JetBrains Mono, Instrument Serif
-
-## Features
-
-- **Terminal-Inspired Design** — Clean, monospace aesthetic with custom typography
-- **Theme Toggle** — Seamless switching between light (Paper) and dark (Ink) modes
-- **Server-Side Rendering** — Optimized performance with Next.js SSR
-- **Responsive Layout** — Optimized for all devices from mobile to ultrawide displays
-- **Interactive Animations** — Live ASCII flow field with mouse tracking
 
 ## Getting Started
 
@@ -61,6 +53,7 @@ javonkitson.com/
 ├── public/
 │   ├── favicon.ico
 │   ├── JavonKResumev4.pdf
+│   ├── AAI590Capstone.pdf
 │   └── robots.txt
 ├── src/
 │   ├── components/
@@ -118,14 +111,10 @@ Theme colors are defined in `src/styles/globals.css` using CSS variables:
 - Safari (last 2 versions)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## License
-
-MIT License - feel free to use this as a template for your own portfolio.
-
 ## Contact
 
 - **Email:** javonkitson@gmail.com
 - **GitHub:** [@noface-0](https://github.com/noface-0)
-- **LinkedIn:** [javonkitson](https://linkedin.com/in/javonkitson)
+- **LinkedIn:** [javonkitson](https://www.linkedin.com/in/javon-k-1b4127160/)
 
 ---
