@@ -24,7 +24,7 @@ const PROJECTS: ProjectData[] = [
     desc: 'Framework for automated neural network design — searches the architecture space to find performant topologies without hand-tuning.',
     stack: ['Python', 'TensorFlow', 'PyTorch', 'Streamlit'],
     year: '2024',
-    repo: 'https://github.com/noface-0/simple-nas',
+    repo: 'https://github.com/noface-0/S-NAS',
   },
   {
     n: '03',
