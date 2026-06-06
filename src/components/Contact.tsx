@@ -40,7 +40,7 @@ export default function Contact() {
                 </span>
                 <span className="arrow">↗</span>
               </a>
-              <a href="https://linkedin.com/in/javonkitson" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/javon-k-1b4127160" target="_blank" rel="noreferrer">
                 <span>
                   <span className="k">network</span>
                   <br />
