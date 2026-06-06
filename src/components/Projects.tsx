@@ -10,16 +10,16 @@ interface ProjectData {
 }
 
 const PROJECTS: ProjectData[] = [
+  // {
+  //   n: '01',
+  //   title: 'TopoDiff',
+  //   desc: 'Conditional latent diffusion model for topology optimization — generates optimal 3D material distributions in ~500ms, replacing 50-200 iterative FEM solves with a single forward pass. [coming soon]',
+  //   stack: ['Python', 'PyTorch', 'Diffusers', 'VAE'],
+  //   year: '2025',
+  //   repo: 'https://github.com/noface-0/TopoDiff',
+  // },
   {
     n: '01',
-    title: 'TopoDiff',
-    desc: 'Conditional latent diffusion model for topology optimization — generates optimal 3D material distributions in ~500ms, replacing 50-200 iterative FEM solves with a single forward pass. [coming soon]',
-    stack: ['Python', 'PyTorch', 'Diffusers', 'VAE'],
-    year: '2025',
-    repo: 'https://github.com/noface-0/TopoDiff',
-  },
-  {
-    n: '02',
     title: 'Simple Neural Architecture Search',
     desc: 'Framework for automated neural network design — searches the architecture space to find performant topologies without hand-tuning.',
     stack: ['Python', 'TensorFlow', 'PyTorch', 'Streamlit'],
@@ -27,7 +27,7 @@ const PROJECTS: ProjectData[] = [
     repo: 'https://github.com/noface-0/S-NAS',
   },
   {
-    n: '03',
+    n: '02',
     title: 'Deep RL Stock Trading',
     desc: 'Ensemble trading system combining PPO/SAC agents, genetic algorithm portfolio selection, and FNN price prediction — achieved +89% ROI in backtests.',
     stack: ['Python', 'PyTorch', 'QuantConnect', 'Pandas'],
@@ -35,7 +35,7 @@ const PROJECTS: ProjectData[] = [
     repo: '/AAI590Capstone.pdf',
   },
   {
-    n: '04',
+    n: '03',
     title: 'Temporal Hierarchical Clustering',
     desc: 'Financial-instrument relationship analysis over time — clusters tickers by behavior and tracks how groupings evolve through market regimes.',
     stack: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
@@ -43,7 +43,7 @@ const PROJECTS: ProjectData[] = [
     repo: 'https://github.com/noface-0/temporal-hierarchical-clustering',
   },
   {
-    n: '05',
+    n: '04',
     title: 'Geoestimation',
     desc: 'Satellite-imagery building-footprint extraction — semantic segmentation pipeline that turns orthophotos into clean polygon outputs.',
     stack: ['Python', 'TensorFlow', 'EfficientNet', 'UNet'],
@@ -51,7 +51,7 @@ const PROJECTS: ProjectData[] = [
     repo: 'https://github.com/noface-0/geoestimation',
   },
   {
-    n: '06',
+    n: '05',
     title: 'javonkitson.com',
     desc: "The site you're currently looking at.",
     stack: ['TypeScript', 'React', 'Next.js', 'CSS'],
