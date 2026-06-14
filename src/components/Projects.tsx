@@ -10,14 +10,6 @@ interface ProjectData {
 }
 
 const PROJECTS: ProjectData[] = [
-  // {
-  //   n: '01',
-  //   title: 'TopoDiff',
-  //   desc: 'Conditional latent diffusion model for topology optimization — generates optimal 3D material distributions in ~500ms, replacing 50-200 iterative FEM solves with a single forward pass. [coming soon]',
-  //   stack: ['Python', 'PyTorch', 'Diffusers', 'VAE'],
-  //   year: '2025',
-  //   repo: 'https://github.com/noface-0/TopoDiff',
-  // },
   {
     n: '01',
     title: 'Simple Neural Architecture Search',
